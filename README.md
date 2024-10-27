@@ -7,7 +7,7 @@
 ## Requirements
 1. go >= 1.23.2, see [go.mod](./go.mod)
 1. node.js - npm tailwind dependency
-1. makefile runner (for hot reload) - on win [Cygwin](https://www.cygwin.com/) with package `make` and added to PATH is required
+1. makefile runner (for hot reload with Makefile, optional) - on win [Cygwin](https://www.cygwin.com/) with package `make` and added to PATH is required
 
 ## How to run (via Makefile)
 1. open repository root
@@ -17,7 +17,7 @@
 1. templ proxy (hot reload) started at http://127.0.0.1:7331
 
 > [!NOTE]
-> Makefile using AIR to detect file/templ changes and restart app.
+> Makefile uses AIR to detect file/templ changes and to restart the app.
 
 > [!NOTE]
 > Makefile on windows (terminal/pws window in VSCode) sometimes freezes when stopping with `CTRL+C` and needs to be killed.
@@ -33,4 +33,4 @@
 
 ## How to make it yours
 1. replace all `app.yourcompany` namespace occurences with `your own` namespace
-1. your are ready to go
+1. you are ready to go
