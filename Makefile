@@ -11,7 +11,7 @@ npm-install-and-tailwind-watch:
 
 # runs air to detect any go file changes to re-build and re-run the server.
 server-watch-air:
-	go run github.com/air-verse/air@v1.60.0 \
+	go run github.com/air-verse/air@v1.61.1 \
 	--build.cmd "templ.exe generate --notify-proxy & go build -o ./tmp/main.exe ." \
 	--build.bin "tmp\\main.exe" \
 	--build.delay "100" \
