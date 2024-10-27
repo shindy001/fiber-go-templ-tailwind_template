@@ -1,8 +1,10 @@
-# Fiber go server with templ, tailwind and FrankenUI (TEMPLATE)
+# Fiber go server with templ, tailwindcss, FrankenUI, alpinejs and htmx (TEMPLATE)
 1. fiber - https://gofiber.io/
 1. templ templating - https://templ.guide/
 1. tailwindcss - https://tailwindcss.com/
-1. frankenUI components - https://franken-ui.dev/
+1. frankenUI components (remote dependency in [base_layout.templ](./views/layouts/base_layout.templ)) - https://franken-ui.dev/ 
+1. alpinejs (remote dependency in [base_layout.templ](./views/layouts/base_layout.templ)) - https://alpinejs.dev/
+1. htmx (remote dependency in [base_layout.templ](./views/layouts/base_layout.templ)) - https://htmx.org/
 
 ## Requirements
 1. go >= 1.23.2, see [go.mod](./go.mod)
