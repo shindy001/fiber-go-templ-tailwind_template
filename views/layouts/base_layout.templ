@@ -1,0 +1,33 @@
+package layouts
+
+var (
+	title = "app project"
+)
+
+templ BaseLayout() {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>{ title }</title>
+			<link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<!-- FrankenUI CSS -->
+			<link rel="stylesheet" href="https://unpkg.com/franken-ui@1.1.0/dist/css/core.min.css"/>
+			<!-- Local app css and js -->
+			<link rel="stylesheet" href="public/app.css"/>
+			<script src="public/app.js"></script>
+			<!-- Alpine Plugins -->
+			<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+			<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+			<!-- HTMX -->
+			<script defer src="https://cdn.jsdelivr.net/npm/htmx.org@1.9.12/dist/htmx.min.js"></script>
+			<!-- FrankenUI js -->
+			<script defer src="https://unpkg.com/franken-ui@1.1.0/dist/js/core.iife.js" type="module"></script>
+			<script defer src="https://unpkg.com/franken-ui@1.1.0/dist/js/icon.iife.js" type="module"></script>
+		</head>
+		<body x-data="{theme: 'dark'}" :class="theme" lang="en">
+			{ children... }
+		</body>
+	</html>
+}
